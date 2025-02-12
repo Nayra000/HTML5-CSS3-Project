@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf7f0;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 25px;
+    background: white;
+    border-radius: 40px;
+    padding: 30px;
+    width: 1100px;
+    height: 600px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.circle_photo {
+
+    display: grid;
+    gap: 15px;
+
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+    height: 550px;
+}
+
+.text-content p {
+    color: rgb(34, 33, 33);
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+.button {
+    display: inline-block;
+    background: #f4a700;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    height: 30px;
+}
+
+.button:hover {
+    background: #c58205;
+}
+
+.greenDiv {
+    width: 100%;
+    background-color: #6ee629;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.greenDiv button {
+
+    background-color: #6ee629;
+    color: black;
+    margin-left: 20px;
+    border: 1px solid #6ee629;
+    height: 40px;
+}
+
+.greenDiv button:hover {
+
+    background-color: #5ec522;
+
+}
+
+.orangeDiv {
+    width: 100%;
+    background-color: #fcae08;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.greydiv {
+    background-color: rgb(48, 47, 47);
+    height: 250px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: white;
+
+}
+
+.innerwhitediv {
+    background-color: white;
+    text-align: center;
+    height: 350px;
+    width: 1160px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    border-radius: 40px;
+}
+
+.innerwhitediv p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.innerwhitediv input {
+
+    height: 40px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+
+
+.circle {
+    position: relative;
+    display: grid;
+    margin-top: 0px;
+    margin-left: 15px;
+    z-index: 1;
+    place-items: center;
+    grid-template-rows: auto;
+
+    align-items: center;
+    background-color: rgb(136, 236, 69);
+    color: rgb(48, 45, 45);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+}
+
+.smallcircle {
+    position: relative;
+    display: grid;
+    margin-top: 0px;
+    margin-left: 15px;
+    z-index: 1;
+    place-items: center;
+    grid-template-rows: auto;
+
+    align-items: center;
+    background-color: rgb(136, 236, 69);
+    color: rgb(48, 45, 45);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+}
+
+.smallcircle img {
+
+    object-fit: cover;
+    height: 20px;
+
+}
+
+
+.circle p:first-child {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.circle p:last-child {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.griddiv {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+    max-width: 1100px;
+
+}
+
+
+.grid-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 40px;
+    display: block;
+
+    height: 400px;
+    object-fit: cover;
+}
+
+.grid-item h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000; 
+    font-family: sans-serif;
+    font-size: 14px; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  nav a.active, 
+  nav a:hover { 
+    color: #fff;
+    background-color: #f2c14e;
+  }
+  nav {
+    background-color: #faf7f0;
+    padding: 10px 0;
+  }

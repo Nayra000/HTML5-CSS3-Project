@@ -4,6 +4,7 @@ body {
     background-size: cover;
     color:#ffffff;
     background-color: #faf7f0;
+    justify-content: center;
 }
 
 nav ul {
@@ -317,3 +318,201 @@ nav ul {
     fill: currentColor;
     white-space: nowrap;
   }
+
+
+  /* our contact */
+
+  .container-about {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 25px;
+    background: white;
+    border-radius: 40px;
+    padding: 30px;
+    width: 1100px;
+    height: 600px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.circle-about {
+  position: relative;
+  display: grid;
+  margin-top: 0px;
+  margin-left: 15px;
+  z-index: 1;
+  place-items: center;
+  grid-template-rows: auto;
+
+  align-items: center;
+  background-color: rgb(136, 236, 69);
+  color: rgb(48, 45, 45);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+}
+.smallcircle {
+  position: relative;
+  display: grid;
+  margin-top: 0px;
+  margin-left: 15px;
+  z-index: 1;
+  place-items: center;
+  grid-template-rows: auto;
+
+  align-items: center;
+  background-color: rgb(136, 236, 69);
+  color: rgb(48, 45, 45);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+}
+
+.greydiv {
+  background-color: rgb(48, 47, 47);
+  height: 250px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  color: white;
+
+}
+
+.smallcircle img {
+
+  object-fit: cover;
+  height: 20px;
+
+}
+
+
+.circle-about p:first-child {
+  margin-top: 30px;
+  margin-bottom: 1px;
+  font-weight: bold;
+  font-size: 50px;
+
+}
+
+.circle-about p:last-child {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.griddiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.button-about {
+  display: inline-block;
+  background: #f4a700;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 15px;
+  height: 30px;
+}
+
+.button-about:hover {
+  background: #c58205;
+}
+
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .container-about {
+      grid-template-columns: 1fr; /* Stack elements */
+      width: 90%;
+      height: auto;
+      padding: 20px;
+  }
+
+  .circle-about {
+      width: 150px;
+      height: 150px;
+  }
+
+  .smallcircle {
+      width: 50px;
+      height: 50px;
+  }
+
+  .button-about {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  h2 {
+      font-size: 40px;
+  }
+
+  .griddiv {
+      gap: 15px;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .container-about {
+      grid-template-columns: 1fr;
+      width: 100%;
+      padding: 15px;
+  }
+
+  .circle-about {
+      width: 120px;
+      height: 120px;
+      font-size: 16px;
+  }
+
+  .circle-about p:first-child {
+      font-size: 30px;
+  }
+
+  .circle-about p:last-child {
+      font-size: 14px;
+  }
+
+  .smallcircle {
+      width: 40px;
+      height: 40px;
+  }
+
+  .griddiv {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  h2 {
+      font-size: 30px;
+  }
+
+  .button-about {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      padding: 10px;
+  }
+
+  .greydiv {
+      height: 200px;
+      text-align: center;
+  }
+}
