@@ -1,0 +1,319 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-size: cover;
+    color:#ffffff;
+    background-color: #faf7f0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000; 
+    font-family: sans-serif;
+    font-size: 14px; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  nav a.active, 
+  nav a:hover { 
+    color: #fff;
+    background-color: #f2c14e;
+  }
+  nav {
+    background-color: #faf7f0;
+    padding: 10px 0;
+  }
+
+
+.container {
+    display: flex;
+    border-radius: 72px;
+    background-size: cover; 
+    margin: 50px auto;
+    max-width: 1190px;
+    padding: 40px;
+}
+/* Medium screens */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .slogan {
+    font-size: 2.5em;
+  }
+
+  .read-more {
+    padding: 12px 25px;
+    font-size: 1.1em;
+  }
+}
+
+
+/* Small screens */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column; /* Ensure everything stacks properly */
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .slogan {
+    font-size: 2em;
+  }
+
+  .read-more {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .percentage {
+    font-size: 2em;
+  }
+}
+
+#img1{
+  background-image: url("https://assets.nicepagecdn.com/11a8ddce/4267640/images/vegetables-set-left-black-slate.jpg");
+}
+#img2{
+  background-image: url("home_imgs/fresh-salad-with-turkey-eggs-vegetables.jpg");
+  height: 750px;
+}
+#img3{
+  background-image: url("home_imgs/juicy-steak-medium-rare-beef-with-spices-grilled-vegetables.jpg");
+  height: 750px;
+}
+#img4{
+  background-image: url("home_imgs/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg");
+  height: 750px;
+}
+.inner-content-second{
+  margin-top: 275px;
+}
+
+.left-content {
+    flex: 1;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.percentage {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.lunch {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.headline {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.freepik {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    color: white;
+}
+.our-restaurant {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.slogan {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white
+}
+
+.read-more {
+    background-color: #FFD700;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+/* view our menu */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+}
+/* Medium screens */
+@media screen and (max-width: 1024px) {
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens (1 card per row) */
+@media screen and (max-width: 600px) {
+  .menu-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.menu-item {
+  background: #faf7f0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+
+}
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+  height: 290px;
+  object-fit: cover;
+}
+.cards2{
+  background-color: white;
+}
+.menu-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: black;
+}
+.menu-item button {
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.first-cards{
+  background-color: #f4b400;
+  color: white;
+}
+.second-cards{
+  background-color: #9ae64e;
+  color: black;
+
+}
+.menu-item button:hover {
+  background-color: #f4b400;
+}
+/* keep upto date  */
+
+#keep {
+    margin: 0 auto;
+    max-width: 670px;
+    word-wrap: break-word;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: black;
+  }
+  .sample {
+    word-wrap: break-word;
+    margin: 20px auto 0;
+    font-size: 1.125rem;
+    text-align: center;
+    color: black;
+  }
+  .main-div {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+  }
+  
+  .back-div {
+    background-color: #99e54d;
+    min-height: 400px;
+    margin-top: 100px;
+    display: flex;
+  }
+  .back-div2 {
+    background-color: #f2ae0f;
+    min-height: 400px;
+    margin-top: 100px;
+    display: flex;
+  }
+  .content-div {
+    border-radius: 50px;
+    background-color: #ffffff;
+    width: 80%;
+    text-align: center;
+    margin: 75px auto;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-div-link {
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 20px auto 0;
+    padding: 0;
+    text-decoration: none;
+    color: #111111;
+  }
+  .content-div-link:hover {
+    color: #99e54d;
+  }
+  .svg-content {
+    color: #f1ae0e !important;
+    fill: currentColor;
+    white-space: nowrap;
+  }

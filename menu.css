@@ -190,3 +190,33 @@ h6 {
   cursor: pointer;
   border-radius: 15px;
 }
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000; 
+  font-family: sans-serif;
+  font-size: 14px; 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+nav a.active, 
+nav a:hover { 
+  color: #fff;
+  background-color: #f2c14e;
+}
+nav {
+  background-color: #faf7f0;
+  padding: 10px 0;
+}
