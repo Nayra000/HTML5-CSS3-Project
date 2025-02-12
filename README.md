@@ -18,4 +18,4 @@
 - **Font Awesome** - Adding icons for better visuals.
 
 
-✨ Built with passion for the art of cooking! 🍳🔥
+✨ Built with passion for the art of cooking! 🍳🍳🔥
